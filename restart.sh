@@ -1,1 +1,1 @@
-npm run restart
+echo hello world
