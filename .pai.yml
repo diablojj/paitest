@@ -1,1 +1,11 @@
-restart_script: restart.sh
+deployScripts:
+  start:
+    - npm install
+    - npm run start
+  stop:
+    - npm run stop
+  restart:
+    - npm install
+    - sleep 3
+    - sh my_build_script.sh
+    - npm run restart
